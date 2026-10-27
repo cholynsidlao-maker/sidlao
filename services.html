@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - FreshWash Laundry Shop</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-cyan-500 text-white p-2.5 rounded-xl shadow-md shadow-cyan-500/20">
+                    <i class="fa-solid fa-soap text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold text-slate-900 tracking-tight">Fresh<span class="text-cyan-600">Wash</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="home.html" class="text-slate-600 hover:text-cyan-600 transition-colors">Home</a>
+                <a href="about.html" class="text-slate-600 hover:text-cyan-600 transition-colors">About Us</a>
+                <a href="services.html" class="text-cyan-600 font-semibold transition-colors">Services</a>
+                <a href="gallery.html" class="text-slate-600 hover:text-cyan-600 transition-colors">Gallery</a>
+                <a href="contact.html" class="bg-cyan-600 text-white px-5 py-2.5 rounded-xl hover:bg-cyan-700 transition-all shadow-md shadow-cyan-600/20 font-semibold">Contact Us</a>
+            </nav>
+            <!-- Mobile Menu Button (Optional / Simple representation) -->
+            <div class="md:hidden flex items-center">
+                <a href="contact.html" class="bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Banner Section with Background Image -->
+    <section class="hero-bg text-white py-20 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <span class="bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-cyan-400/30">Professional Care</span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Our Laundry Services</h1>
+            <p class="text-lg text-slate-300 max-w-xl mx-auto">Discover our range of professional cleaning solutions tailored to keep your clothes fresh, crisp, and immaculate.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold text-slate-900 mb-3">Services We Offer</h2>
+            <div class="w-16 h-1 bg-cyan-600 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            
+            <!-- Wash Card -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=600&q=80" alt="Washing Service" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-slate-900 text-xs font-bold px-2.5 py-1 rounded-lg">
+                        <i class="fa-solid fa-water text-cyan-600 mr-1"></i> Wash
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Wash</h3>
+                        <p class="text-slate-600 text-sm mb-6">Professional washing for everyday clothes using premium detergents.</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Price</span>
+                        <span class="text-sm font-bold text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full">Contact us</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dry Card -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=600&q=80" alt="Drying Service" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-slate-900 text-xs font-bold px-2.5 py-1 rounded-lg">
+                        <i class="fa-solid fa-wind text-cyan-600 mr-1"></i> Dry
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Dry</h3>
+                        <p class="text-slate-600 text-sm mb-6">Advanced tumbling and gentle drying service for freshly washed clothes.</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Price</span>
+                        <span class="text-sm font-bold text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full">Contact us</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fold Card -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://th.bing.com/th/id/OIP.TRKisKahbv3MwNDyMQkWVAHaEo?w=275&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Folding Service" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-slate-900 text-xs font-bold px-2.5 py-1 rounded-lg">
+                        <i class="fa-solid fa-shirt text-cyan-600 mr-1"></i> Fold
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Fold</h3>
+                        <p class="text-slate-600 text-sm mb-6">Neatly folded clothes, crisp and wrinkle-free, ready to take home.</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Price</span>
+                        <span class="text-sm font-bold text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full">Contact us</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wash, Dry & Fold Card -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-cyan-100 flex flex-col group relative ring-2 ring-cyan-500/20">
+                <div class="absolute top-3 right-3 z-10 bg-cyan-600 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full shadow">Popular</div>
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=600&q=80" alt="Full Laundry Care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                    <span class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-slate-900 text-xs font-bold px-2.5 py-1 rounded-lg">
+                        <i class="fa-solid fa-basket-shopping text-cyan-600 mr-1"></i> All-in-One
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Wash, Dry & Fold</h3>
+                        <p class="text-slate-600 text-sm mb-6">Complete laundry care package in one convenient, hassle-free service.</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Price</span>
+                        <span class="text-sm font-bold text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full">Contact us</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Call to Action Box -->
+        <div class="bg-gradient-to-r from-slate-900 to-cyan-950 rounded-3xl p-8 sm:p-12 text-white text-center shadow-xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
+                <i class="fa-solid fa-soap text-9xl"></i>
+            </div>
+            <div class="max-w-xl mx-auto relative z-10 space-y-4">
+                <h3 class="text-2xl sm:text-3xl font-bold">Have Special Laundry Needs?</h3>
+                <p class="text-slate-300 text-sm sm:text-base">For our latest rates, bulk discounts, and service availability, please contact our shop.</p>
+                <div class="pt-2">
+                    <a class="inline-flex items-center justify-center bg-cyan-500 text-white hover:bg-cyan-400 font-bold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-cyan-500/30" href="contact.html">
+                        <span>Contact Us Now</span>
+                        <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-slate-900">FreshWash</span>
+                <span>© 2026 Laundry Shop. All rights reserved.</span>
+            </div>
+            <div class="flex space-x-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-600"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-cyan-600"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-cyan-600"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+```
